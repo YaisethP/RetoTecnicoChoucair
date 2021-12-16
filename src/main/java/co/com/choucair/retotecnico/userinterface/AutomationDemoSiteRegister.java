@@ -43,6 +43,9 @@ public class AutomationDemoSiteRegister extends PageObject {
             .located(By.xpath("//*[@id=\"firstpassword\"]"));
     public static final Target CONFIRM_PASSWORD = Target.the("Write his password again")
             .located(By.id("secondpassword"));
+    public static final String VERIFY_STEP = String.valueOf(Target.the("Verify step")
+            .located(By.xpath("//*[@id=\"submitbtn\"]")));
     public static final Target SUBMIT_BUTTON = Target.the("button submit register")
             .located(By.cssSelector("button#submitbtn.btn.btn-primary"));
+
 }

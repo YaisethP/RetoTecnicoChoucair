@@ -1,5 +1,6 @@
 package co.com.choucair.retotecnico.stepdefinitions;
 
+import co.com.choucair.retotecnico.questions.Answer;
 import co.com.choucair.retotecnico.tasks.LoginOnDemo;
 import co.com.choucair.retotecnico.tasks.OpenUp;
 import cucumber.api.java.Before;
@@ -30,5 +31,7 @@ public class RetoTecnicoStepDefinition {
 
     @Then("^complete all the field$")
     public void completeAllTheField() {
+        String question = null;
+        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(Answer.toThe(question)));
     }
 }

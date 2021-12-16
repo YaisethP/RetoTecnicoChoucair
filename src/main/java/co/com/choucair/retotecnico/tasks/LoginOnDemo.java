@@ -20,12 +20,11 @@ public class LoginOnDemo implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(Click.on(SKIP_BUTTON),
-                Enter.theValue("Diana").into(AutomationDemoSiteRegister.INPUT_NAME),
-                Enter.theValue("Victoria").into(AutomationDemoSiteRegister.INPUT_LASTNAME),
+                Enter.theValue("Yaiseth").into(AutomationDemoSiteRegister.INPUT_NAME),
+                Enter.theValue("Palacio").into(AutomationDemoSiteRegister.INPUT_LASTNAME),
                 Enter.theValue("Panama Oeste").into(AutomationDemoSiteRegister.INPUT_ADDRESS),
-                Enter.theValue("diana@gmail.com").into(AutomationDemoSiteRegister.INPUT_EMAIL),
+                Enter.theValue("yaisethpalacio@gmail.com").into(AutomationDemoSiteRegister.INPUT_EMAIL),
                 Enter.theValue("7739600726").into(AutomationDemoSiteRegister.INPUT_PHONE),
-                //Estoy segura de que no es así pero lo intento
                 Click.on(SELECT_GENDER),
                 Click.on(DROP_SKIIL),
                 Click.on(SKILL),
