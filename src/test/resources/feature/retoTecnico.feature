@@ -7,4 +7,4 @@
   Scenario:
     Given than Yaiseth wants to registration in the Automation Demo Site page
     When fills in all requested fields
-    Then complete all the field
+    Then complete all the field no
